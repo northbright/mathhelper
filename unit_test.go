@@ -30,8 +30,12 @@ func Example() {
 	logger.Printf("MaxUInt64(%v, %v) = %v", a1, b1, d)
 
 	// Output:
+	// MinInt64(-32455, 32923) = -32455
+	// MaxInt64(-32455, 32923) = 32923
+	// MinUInt64(1002993, 2222222) = 1002993
+	// MaxUInt64(1002993, 2222222) = 2222222
 }
 
 func init() {
-	logger = fnlog.New("")
+	logger = fnlog.New("", true, false, false)
 }
