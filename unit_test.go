@@ -1,13 +1,9 @@
 package mathhelper_test
 
 import (
-	"github.com/northbright/fnlog"
-	"github.com/northbright/mathhelper"
-	"log"
-)
+	"fmt"
 
-var (
-	logger *log.Logger
+	"github.com/northbright/mathhelper"
 )
 
 func Example() {
@@ -18,24 +14,20 @@ func Example() {
 	var b1 uint64 = 2222222
 
 	c := mathhelper.MinInt64(a, b)
-	logger.Printf("MinInt64(%v, %v) = %v", a, b, c)
+	fmt.Printf("MinInt64(%v, %v) = %v\n", a, b, c)
 
 	c = mathhelper.MaxInt64(a, b)
-	logger.Printf("MaxInt64(%v, %v) = %v", a, b, c)
+	fmt.Printf("MaxInt64(%v, %v) = %v\n", a, b, c)
 
 	d := mathhelper.MinUInt64(a1, b1)
-	logger.Printf("MinUInt64(%v, %v) = %v", a1, b1, d)
+	fmt.Printf("MinUInt64(%v, %v) = %v\n", a1, b1, d)
 
 	d = mathhelper.MaxUInt64(a1, b1)
-	logger.Printf("MaxUInt64(%v, %v) = %v", a1, b1, d)
+	fmt.Printf("MaxUInt64(%v, %v) = %v\n", a1, b1, d)
 
 	// Output:
 	// MinInt64(-32455, 32923) = -32455
 	// MaxInt64(-32455, 32923) = 32923
 	// MinUInt64(1002993, 2222222) = 1002993
 	// MaxUInt64(1002993, 2222222) = 2222222
-}
-
-func init() {
-	logger = fnlog.New("", true, false, false)
 }
