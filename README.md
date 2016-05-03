@@ -1,5 +1,5 @@
 # mathhelper
-A golang package to provide helper functions for math
+mathhelper is a [Golang](http://golang.org) package which provides helper functions for math.
 
 [![Build Status](https://travis-ci.org/northbright/mathhelper.svg?branch=master)](https://travis-ci.org/northbright/mathhelper)
 
