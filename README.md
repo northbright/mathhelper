@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/northbright/mathhelper.svg?branch=master)](https://travis-ci.org/northbright/mathhelper)
 [![Go Report Card](https://goreportcard.com/badge/github.com/northbright/mathhelper)](https://goreportcard.com/report/github.com/northbright/mathhelper)
+[![GoDoc](https://godoc.org/github.com/northbright/mathhelper?status.svg)](https://godoc.org/github.com/northbright/mathhelper)
 
 mathhelper is a [Golang](http://golang.org) package which provides helper functions for math.
 
